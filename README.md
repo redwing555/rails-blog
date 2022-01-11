@@ -1,76 +1,60 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Blog App
 
-> One paragraph statement about the project.
-
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
+The Blog app is a classic example of a blog website. It's a functional website that shows the list of posts and empower readers to interact with them by adding comments and liking posts.
 
 ## Built With
-
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
+- Ruby
+- Ruby on Rails
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+Follow these steps below :
 
 
-To get a local copy up and running follow these simple example steps.
+### Setup
+ ```git clone https://github.com/redwing555/railsblog```
+
+ ```cd railsblog```
 
 ### Prerequisites
 
-### Setup
+    Ruby Rails PostgresSQL
 
-### Install
+Install gems with:
+    
+    bundle install
 
-### Usage
+Start server with:
 
-### Run tests
+    rails s
 
-### Deployment
+Open http://localhost:3000/ in your browser.
+Run tests
+
+Install npm with:
+
+    npm i
+
+Install all Ruby dependecies with:
+
+    bundle install
 
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Houssam Hichami**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@redwing555](https://github.com/redwing555)
+- LinkedIn: [Houssam Hichami](https://linkedin.com/in/houssam-hichami)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/codecaiine/rails-blog/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
