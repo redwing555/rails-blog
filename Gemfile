@@ -51,6 +51,7 @@ gem 'rubocop', '>= 1.0', '< 2.0', require: false
 
 group :development, :test do
  gem 'rspec-rails', '~> 5.0.0'
+ gem 'rails-controller-testing'
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri mingw x64_mingw]
 end
