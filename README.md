@@ -40,6 +40,10 @@ Install all Ruby dependecies with:
 
     bundle install
 
+### Tests
+- Run ```gem install rspec``` to install Rspec,
+- Run ```bundle exec rspec --format documentation``` to run all tests with detailed description.
+
 
 
 ## Authors
