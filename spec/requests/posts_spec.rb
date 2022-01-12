@@ -1,10 +1,17 @@
 require 'rails_helper'
 
 RSpec.describe "Posts", type: :request do
-  describe "GET /posts" do
-    it "works! (now write some real specs)" do
-      get posts_index_path
-      expect(response).to have_http_status(200)
+  describe "GET /index" do
+    before(:example) { get user_posts_path(1)}
+
+    it "http response should be sucess" do
+      
+      expect(response).to have_http_status(:ok)
+    end
+
+    it "renders correct page contents" do
+      
+      expect(response.body).to include('Show all posts')
     end
   end
 end
