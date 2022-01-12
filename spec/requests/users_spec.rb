@@ -12,5 +12,9 @@ RSpec.describe "Users", type: :request do
       
       expect(response.body).to include('List all Users')
     end
+
+    it "renders index template" do
+      expect(response).to render_template('index')
+    end
   end
 end
