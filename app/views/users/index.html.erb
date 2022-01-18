@@ -1,7 +1,7 @@
 <div>
     <% @users.each do |user| %>
         <%= link_to user_path(user.id) do %>
-            <%= render partial: "shared/user_profile", locals: {user: user} %>
+            <%= render partial: "shared/user_profile", locals: {user: user} || "No profiles found!" %>
         <% end %>
     <% end %>
 </div>

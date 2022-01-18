@@ -1,0 +1,9 @@
+<section>
+    <div class="display mt-4">
+        <img src=<%=user.photo.present? user.photo : '.../assets/images/user_icon.png' %> class="border border-4" alt="user profile image">
+        <div>
+            <h3 class="username"> <%= user.name%> </h3>
+            <span class="post_count">Number of posts : <%= user.posts.length%> </span>
+        </div>
+    </div>
+</section>
