@@ -1,4 +1,4 @@
-<div>
+<div class="users-container">
     <% @users.each do |user| %>
         <%= link_to user_path(user.id) do %>
             <%= render partial: "shared/user_profile", locals: {user: user} %>
