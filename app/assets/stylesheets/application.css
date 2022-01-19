@@ -63,3 +63,10 @@ button{
     margin-bottom: 2rem;
     margin-top: 1rem;
 }
+
+.post-info{
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+}
