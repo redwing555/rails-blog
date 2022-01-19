@@ -2,12 +2,17 @@
             <div>
                  <div class="post-info">  
                     <div><h4 class="py-3"> <%= @post.title %> by <%=@user.name %> </h4> </div>
-                    <div>
-                        <span>Comments: <%= @post.comments.size%> </span>
-                        <span>Likes: <%= @post.likes.size%> </span>
-                    </div>  
+                    <div class="info-container">
+                        <div >
+                            <%=link_to "Edit post", user_posts_path(@user.id), class:"btn btn-primary justify-content-center align-self-center"%> 
+                        </div> 
+                        <div>Comments: <%= @post.comments.size%> </div>
+                        <div>Likes: <%= @post.likes.size%> </div>
+                        
+                    </div >  
                 </div>
-                 <p> <%= @post.text %> </p>    
+                 <p> <%= @post.text %> </p> 
+                   
             </div>
             <br/>
             <div class="my-5 p-2 border border-3 container">

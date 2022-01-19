@@ -67,3 +67,21 @@ button {
   flex-direction: row;
   justify-content: space-between;
 }
+
+.post-btn{
+   
+    padding: 2rem;
+    
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
+}
