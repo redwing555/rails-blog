@@ -14,59 +14,56 @@
  *= require_self
  */
 
-
-.users-container{
-    margin-top: 10rem;
-}
-.btn{
-    display: flex;
-    text-decoration: none;
+.users-container {
+  margin-top: 10rem;
 }
 
-.post_count{
-    margin-left: 50rem;
+.btn {
+  display: flex;
+  text-decoration: none;
 }
 
-button{
-    border: none;
-    margin-left: 50%;
+.post_count {
+  margin-left: 50rem;
 }
 
-.recent-posts{
-    list-style-type: none;
+button {
+  border: none;
+  margin-left: 50%;
 }
 
-.bio{
-    
-    margin-top: 5rem;
+.recent-posts {
+  list-style-type: none;
 }
 
-.post{
-    margin-left: 6.2rem;
+.bio {
+  margin-top: 5rem;
 }
 
-.profile-photo{
-    height: 15rem;
-    
+.post {
+  margin-left: 6.2rem;
 }
 
-.list_users{
-    width: 70rem;
-    height: 15rem;
+.profile-photo {
+  height: 15rem;
 }
 
-.comments{
-    list-style-type: none;
+.list_users {
+  width: 70rem;
+  height: 15rem;
+}
+
+.comments {
+  list-style-type: none;
 }
 
 .comments li {
-    margin-bottom: 2rem;
-    margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
-.post-info{
-    display: flex;
-
-    flex-direction: row;
-    justify-content: space-between;
+.post-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
