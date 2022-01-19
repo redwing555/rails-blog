@@ -1,1 +1,28 @@
-<h1>Show single user details</h1>
+<div>
+    <%= render partial: "shared/user_profile", locals: {user: @user} %>
+    <div class ="bio border border-3 container">
+        <h3 class="py-3"> Bio</h3>
+        <p> <%= @user.bio %> </p>
+    </div>
+
+    <ul class="recent-posts">
+    <% @user.recent_posts.each do |post|%>
+
+        <li class="post my-5 p-2 border border-3 container">
+            <div>
+                 <div>
+                    <%= link_to user_post_path(@user.id, post.id), id: "user_post#{post.id}" do %> 
+                        <h4 class="py-3"> <%= post.title %> </h4>
+                     <% end %>      
+                     <p> <%= post.text %> </p>      
+                </div>
+                <span>Comments: <%= post.comments.size%> </span>
+                <span>Likes: <%= post.likes.size%> </span>
+            </div>
+        </li>
+    <% end %>    
+    </ul>
+    <button>
+        <%=link_to "See all posts", user_posts_path(@user.id), class:"btn btn-primary justify-content-center align-self-center"%>
+    </button>
+</div>

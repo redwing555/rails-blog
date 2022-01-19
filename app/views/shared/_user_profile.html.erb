@@ -1,0 +1,9 @@
+<section class="user-container">
+    <div class="display d-flex mt-4">
+        <img src=<%= user.photo %> class="profile-photo w-25 p-1 border border-2  mx-4" alt="user profile image">
+        <div class="list_users border border-3 d-flex flex-column justify-content-between px-5 py-5">
+            <h3 class="username"> <%= user.name%> </h3>
+            <span class="post_count">Number of posts : <%= user.posts.size %> </span>
+        </div>
+    </div>
+</section>

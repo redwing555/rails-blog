@@ -1,1 +1,20 @@
-<h1>Show single post details</h1>
+<div class="post my-5 p-2 border border-3 container">
+            <div>
+                 <div class="post-info">  
+                    <div><h4 class="py-3"> <%= @post.title %> by <%=@user.name %> </h4> </div>
+                    <div>
+                        <span>Comments: <%= @post.comments.size%> </span>
+                        <span>Likes: <%= @post.likes.size%> </span>
+                    </div>  
+                </div>
+                 <p> <%= @post.text %> </p>    
+            </div>
+            <br/>
+            <div class="my-5 p-2 border border-3 container">
+                <ul class="comments">
+                    <% @post.comments.each do |comment| %>
+                        <li><%= comment.author.name %> : <%= comment.text %> </li>
+                    <% end %>
+                </ul>
+            <div>
+</div>
