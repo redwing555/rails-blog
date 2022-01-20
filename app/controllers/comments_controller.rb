@@ -1,4 +1,6 @@
 class CommentsController < ApplicationController
+    skip_before_action :verify_authenticity_token
+    
     def new
         @comment = Comment.new
     end
@@ -18,6 +20,6 @@ class CommentsController < ApplicationController
     private
 
     def comment_params
-        params.permit(:exit)
+        params.require(:comment).permit(:text)
     end
 end

@@ -28,11 +28,7 @@
                 <span>Comments: <%= post.comments.size%> </span>
                 <span>Likes: <%= post.likes.size%> </span>
                 
-                <div class="btn-container">
-                    <div>
-                        <%=link_to "Like post", user_posts_path(@user.id), class:"btn btn-primary justify-content-center align-self-center"%> 
-                    </div>
-                </div>
+
             </div>
         </li>
 
