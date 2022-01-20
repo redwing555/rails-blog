@@ -29,7 +29,7 @@
 
 button {
   border: none;
-  margin-left: 50%;
+  
 }
 
 .recent-posts {
@@ -84,4 +84,41 @@ button {
     display: flex;
     flex-direction: row-reverse;
     gap: 1rem;
+}
+
+.post-header{
+  margin-left:5rem;
+  margin-top: 2rem;
+}
+
+.nav-container{
+  display: flex;
+  flex-direction: row;
+  float: right;
+  margin-top: -5rem;
+  margin-right: 5rem;
+}
+
+.nav-container-2{
+  display: flex;
+  flex-direction: row;
+  float: right;
+  margin-top: -12rem;
+  margin-right: 5rem;
+}
+
+.form-container{
+  margin-top: 5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-group{
+  padding-top: 1rem;
+}
+
+.form-label{
+  font-weight: bold;
 }

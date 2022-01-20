@@ -19,7 +19,7 @@ class PostsController < ApplicationController
     respond_to do |format|
       format.html do
         if created_post.save
-          redirect_to user_post_path(@post.author_id,@post.id), notice: "Post created !"
+          redirect_to user_post_path(created_post.author_id,created_post.id), notice: "Post created !"
         else
           render :new, alert: "Post not created, please try again!"
         end

@@ -3,9 +3,6 @@
                  <div class="post-info">  
                     <div><h4 class="py-3"> <%= @post.title %> by <%=@user.name %> </h4> </div>
                     <div class="info-container">
-                        <div >
-                            <%=link_to "Edit post", user_posts_path(@user.id), class:"btn btn-primary justify-content-center align-self-center"%> 
-                        </div> 
                         <div>Comments: <%= @post.comments.size%> </div>
                         <div>Likes: <%= @post.likes.size%> </div>
                         
