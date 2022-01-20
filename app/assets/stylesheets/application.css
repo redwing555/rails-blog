@@ -29,7 +29,6 @@
 
 button {
   border: none;
-  
 }
 
 .recent-posts {
@@ -68,43 +67,40 @@ button {
   justify-content: space-between;
 }
 
-.post-btn{
-   
-    padding: 2rem;
-    
+.post-btn {
+  padding: 2rem;
 }
 
-.btn-container{
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
-.see-all{
+.see-all {
   margin-bottom: 10rem;
 }
 
-.info-container{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
+.info-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
 
-.post-header{
-  margin-left:5rem;
+.post-header {
+  margin-left: 5rem;
   margin-top: 2rem;
 }
 
-.nav-container{
+.nav-container {
   display: flex;
   flex-direction: row;
   float: right;
   margin-top: -4rem;
-
   margin-right: 5rem;
 }
 
-.nav-container-2{
+.nav-container-2 {
   display: flex;
   flex-direction: row;
   float: right;
@@ -112,7 +108,7 @@ button {
   margin-right: 5rem;
 }
 
-.form-container{
+.form-container {
   margin-top: 5rem;
   padding: 2rem;
   display: flex;
@@ -120,42 +116,40 @@ button {
   gap: 2rem;
 }
 
-.form-group{
+.form-group {
   padding-top: 1rem;
 }
 
-.form-label{
+.form-label {
   font-weight: bold;
 }
 
-.like-btn{
+.like-btn {
   margin-top: -1.8rem;
 }
 
-.nav-container-3{
+.nav-container-3 {
   display: flex;
   flex-direction: row;
   float: right;
   margin-top: -4rem;
-
 }
 
-.container-post{
-  
+.container-post {
   margin: 5rem;
   margin-top: 5rem;
 }
 
-.add-comment{
+.add-comment {
   margin-bottom: 5rem;
   margin-left: 73rem;
 }
 
-.comment-like-container{
+.comment-like-container {
   margin-left: 2.5rem;
 }
 
-.form-control-text{
+.form-control-text {
   height: 5rem;
   width: 80rem;
   border: 0.5px gray solid;
