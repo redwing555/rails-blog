@@ -1,8 +1,24 @@
 <div>
     <%= render partial: "shared/user_profile", locals: {user: @user} %>
+    <h1 class="post-header">Posts</h1>
 
+    
+    <nav class="nav-container">
+    <button>
+    <%= link_to 'New Post', new_user_post_path(@user.id), class: 'add-post btn btn-primary justify-content-center align-self-center' %>
+     </button>
+     <button>
+     <%= link_to "Home", root_path, class: "btn btn-primary justify-content-center align-self-center" %>
+     </button>
+    <button>
+    <%= link_to "Back", :back, class: "btn btn-primary justify-content-center align-self-center" %>
+    </button>
+    </nav>
     <ul class="recent-posts">
+
+
     <% @posts.each do |post|%>
+
 
         <li class="post my-5 p-2 border border-3 container">
             <div>
