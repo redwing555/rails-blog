@@ -9,9 +9,6 @@
      <button>
      <%= link_to "Home", root_path, class: "btn btn-primary justify-content-center align-self-center" %>
      </button>
-    <button>
-    <%= link_to "Back", :back, class: "btn btn-primary justify-content-center align-self-center" %>
-    </button>
     </nav>
 
     <ul class="recent-posts">
@@ -39,7 +36,7 @@
     <div class="btn-container">
     <div>
     
-        <%=link_to "See all posts", user_posts_path(@user.id), class:"btn btn-primary justify-content-center align-self-center"%>
+        <%=link_to "See all posts", user_posts_path(@user.id), class:"see-all btn btn-primary justify-content-center align-self-center"%>
     
     </div>
     </div>

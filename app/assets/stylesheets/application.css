@@ -80,6 +80,10 @@ button {
     gap: 2rem;
 }
 
+.see-all{
+  margin-bottom: 10rem;
+}
+
 .info-container{
     display: flex;
     flex-direction: row;
@@ -95,7 +99,8 @@ button {
   display: flex;
   flex-direction: row;
   float: right;
-  margin-top: -5rem;
+  margin-top: -4rem;
+
   margin-right: 5rem;
 }
 
@@ -132,13 +137,29 @@ button {
   flex-direction: row;
   float: right;
   margin-top: -4rem;
-  margin-right: rem;
 
 }
 
 .container-post{
-  position: relative;
-  bottom: 5rem;
-  top: 5rem;
-  right: 3rem;
+  
+  margin: 5rem;
+  margin-top: 5rem;
+}
+
+.add-comment{
+  margin-bottom: 5rem;
+  margin-left: 73rem;
+}
+
+.comment-like-container{
+  margin-left: 2.5rem;
+}
+
+.form-control-text{
+  height: 5rem;
+  width: 80rem;
+  border: 0.5px gray solid;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  padding-left: 1rem;
 }
