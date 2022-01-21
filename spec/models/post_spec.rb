@@ -37,4 +37,13 @@ RSpec.describe Post, type: :model do
       subject.likes_counter = -1
     expect(subject).to_not be_valid
     end
+
+    describe 'post model method' do
+      before {10.times {|comment| Comment.create(post_id:subject.id)}}
+
+      it "rencent comments should be 3" do
+        expect(subject.recent_comments).to eq(subject.comments.last(3))
+      end
+    end
+  end
 end
