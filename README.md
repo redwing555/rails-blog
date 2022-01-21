@@ -43,7 +43,7 @@ Install all Ruby dependecies with:
 ### Tests
 - Run ```gem install rspec``` to install Rspec,
 - Run ```rspec spec``` to run all tests.
-- Run ```bundle exec rspec --format documentation``` to run all tests with detailed description.
+- Run ```rspec ./spec/models --format documentation``` to run all tests on models with detailed description.
 
 
 
