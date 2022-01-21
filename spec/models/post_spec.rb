@@ -6,42 +6,42 @@ RSpec.describe Post, type: :model do
       Post.new
     end
 
-    before {subject.save}
+    before { subject.save }
 
-    it "title presence" do
+    it 'title presence' do
       subject.title = nil
       expect(subject).to_not be_valid
     end
 
-    it "title should not exceed 250 char" do
-      subject.title = "post 1"*251
+    it 'title should not exceed 250 char' do
+      subject.title = 'post 1' * 251
       expect(subject).to_not be_valid
     end
 
-    it "comments counter should be integer " do
+    it 'comments counter should be integer ' do
       subject.comments_counter = 1.7
-    expect(subject).to_not be_valid
+      expect(subject).to_not be_valid
     end
 
-    it "comments counter should be greater or equal to 0 " do
+    it 'comments counter should be greater or equal to 0 ' do
       subject.comments_counter = -1
-    expect(subject).to_not be_valid
+      expect(subject).to_not be_valid
     end
 
-    it "Likes counter should be integer " do
+    it 'Likes counter should be integer ' do
       subject.likes_counter = 1.7
-    expect(subject).to_not be_valid
+      expect(subject).to_not be_valid
     end
 
-    it "Likes counter should be greater or equal to 0 " do
+    it 'Likes counter should be greater or equal to 0 ' do
       subject.likes_counter = -1
-    expect(subject).to_not be_valid
+      expect(subject).to_not be_valid
     end
 
     describe 'post model method' do
-      before {10.times {|comment| Comment.create(post_id:subject.id)}}
+      before { 10.times { |_comment| Comment.create(post_id: subject.id) } }
 
-      it "rencent comments should be 3" do
+      it 'rencent comments should be 3' do
         expect(subject.recent_comments).to eq(subject.comments.last(3))
       end
     end
