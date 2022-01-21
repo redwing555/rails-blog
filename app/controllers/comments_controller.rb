@@ -13,7 +13,7 @@ class CommentsController < ApplicationController
       flash[:notice] = 'Comment created!'
       redirect_to user_posts_path(current_user)
     else
-      render :new
+      render :new, alert: 'Comment not created, please try again!'
     end
   end
 
