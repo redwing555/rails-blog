@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Post, type: :model do
-  describe 'validation' do
+  describe 'post model validations' do
     subject do
       Post.new
     end
@@ -37,5 +37,4 @@ RSpec.describe Post, type: :model do
       subject.likes_counter = -1
     expect(subject).to_not be_valid
     end
-  end
 end
